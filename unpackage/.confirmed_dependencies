@@ -61,7 +61,8 @@
 			"html/set.html"
 		],
 		"refer": [
-			"html/set.html"
+			"html/set.html",
+			"index.html"
 		]
 	},
 	"html/set.html": {
@@ -71,7 +72,8 @@
 			"js/mui.min.js",
 			"fonts/mui.ttf",
 			"css/iconfont.css",
-			"css/mui.min.css"
+			"css/mui.min.css",
+			"css/mui.css"
 		],
 		"refer": [
 			"html/mine.html"
