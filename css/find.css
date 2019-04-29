@@ -1,0 +1,163 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mui-active{
+	color: red !important;
+}
+body{
+	/*height: 1500px;*/
+	background: #f7f3f7 !important;
+}
+/*******************************************/
+/*header*/
+header{
+	background: #f7f3f7 !important;
+	box-shadow: none !important;
+}
+h1{
+	color: #ff3c31 !important;
+}
+/***********************************************************/
+/*轮播图*/
+.swiper_lun{
+	position: relative;
+}
+.swiper-container {
+  width: 100%;
+  height: 80%;
+}
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/*轮播上的字*/
+.swiper_zi{
+	width: 100%;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+	text-align: left;
+	padding-left: 20px;
+}
+/*轮播分式指示器*/
+#shuzi{
+	position: absolute;
+	top: 55px;
+	left: 310px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 15px;
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+}
+/***********************************************/
+/*资讯*/
+.consult{
+	width: 100%;
+	margin-bottom: 10px;
+}
+/*资讯title*/
+.consult_title{
+	font-size: 17px;
+	color: #636563;
+}
+.consult_title b{
+	border-left: 2px solid #ff3831;
+}
+/**************************************************/
+/*学习资料*/
+.ziliao_con{
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.ziliao_con img{
+	width: 25%;
+	height: 120px;
+}
+/****************************************************/
+/*汉字游戏*/
+.game{
+	height: 100px;
+}
+.ziliao_con .game_ul{
+	width: 85%;
+	margin: 0 auto;
+}
+.ziliao_con .game_ul img{
+	width: 100%;
+	height: 80%;
+}
+/******************************************/
+/*系列产品*/
+.list_box{
+	margin-bottom: 70px;
+}
+.list_con li{
+	width: 97%;
+}
+.list_con .mui-media-body>div{
+	color: #9c9a9c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

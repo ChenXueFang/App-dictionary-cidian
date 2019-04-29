@@ -1,0 +1,210 @@
+/*渐变背景色*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#big{
+	height:945px;
+    background: -webkit-linear-gradient(#082c6b,#fff); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#082c6b,#fff); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#082c6b,#fff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#082c6b,#fff); /* 标准的语法（必须放在最后） */
+}
+.mui-active{
+	color: red !important;
+}
+/************************************************************/
+/*头部*/
+header{
+	text-align: right;
+}
+header>a{
+	color: #fff;
+	display: inline-block;
+	margin: 30px 20px 0 0;
+	font-size: 20px;
+}
+header>a.iconfont{
+	font-size: 20px;
+}
+/*********************************************************/
+/*main大标题*/
+#zu{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#zu>div{
+	width: 90%;
+	height: 400px;
+}
+main h1{
+	color: #fff;
+	font-weight: 200;
+	margin: 120px 0 25px;
+	text-align: center;
+	font-size: 38px;
+}
+/*输入框*/
+.input{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.input .mui-icon{
+	font-size: 20px;
+}
+.input input{
+	width: 90%;
+	height: 50px;
+	padding-left: 40px;
+	border: none;
+	border-radius: 5px;
+}
+/*两个图标间的分割线*/
+.icon_two>b{
+	display: inline-block;
+	height: 20px;
+	width: 2px;
+	border-left: 1.5px solid #adaaad;
+	margin: 0 5px;
+}
+/*定位放大镜*/
+.input .ico_search{
+	position: absolute;	
+	top: 16px;
+	left: 35px;
+	z-index: 999;
+}
+/*定位两个图标*/
+.icon_two{
+	position: absolute;
+	top: 15px;
+	right: 30px;
+}
+/******************************************************/
+/*分类查询*/
+ul.three_refer{
+	list-style: none;
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 15px 0 150px;
+}
+ul.three_refer>li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+}
+ul.three_refer li>p{
+	width: 50%;
+	color: #fff;
+	font-size: 20px;
+	border: 2px solid #fff;
+	padding: 8px;
+	border-radius: 8px;
+}
+/**************************************************/
+/*学习资讯*/
+.consult{
+	width: 90%;
+	margin: 0 auto;
+}
+/*学习资讯title*/
+.consult_title{
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 0 13px;
+	font-size: 20px;
+	color: #cecfce;
+}
+.consult_title li .mui-icon{
+	font-size: 20px;
+	color: #a5a6a5;
+}
+.consult_title li:nth-child(1) .mui-icon{
+	font-size: 20px;
+	color: #848684;
+}
+/*学习资讯内容*/
+.consult_con li{
+	width: 97%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.consult_a{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.consult_a>div.mui-media-body{
+	margin-left: 15px;
+}
+/*更多内容*/
+.consult_more{
+	background: #fff;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 10px;
+}
+.mui-media-body{
+	color: #636563;
+}
+.mui-media-body>p{
+	color: #cecfce;
+}
+/*每日一句*/
+.day{
+	position: relative;
+}
+.day span{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #a5a6a5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

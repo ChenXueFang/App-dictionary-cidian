@@ -1,0 +1,140 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mui-active{
+	color: red !important;
+}
+body{
+	/*height: 1500px;*/
+	background: #f7f7f7 !important;
+}
+/*******************************************/
+/*header*/
+header{
+	background: #f7f3f7 !important;
+	box-shadow: none !important;
+}
+h1{
+	color: #ff3c31 !important;
+}
+/***********************************************************/
+/*头像登录*/
+.mine_tou{
+	height: 130px;
+	margin-top: 45px;
+	padding-bottom: 15px;
+	/*background: pink;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.mine_tou img{
+	margin-top: 15px;
+	margin-bottom: 10px;
+	height: 50%;
+}
+.mine_tou p{
+	color: #313031;
+}
+/**********************************************/
+/*列表*/
+.mine_list li{
+	/*height: 50px;*/
+	/*line-height: 50px;*/
+}
+.mine_list li img{
+	width: 30px;
+	margin-right: 15px;
+	margin-bottom: -8px;
+}
+/*设置列表*/
+.shezhi_list{
+	margin: 20px 0 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

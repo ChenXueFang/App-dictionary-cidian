@@ -1,0 +1,22 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mui-active{
+	color: #ff3b30 !important;
+}
+body{
+	/*height: 1500px;*/
+	background: #f6f6f6 !important;
+}
+/*******************************************/
+/*header*/
+header{
+	background: #f7f3f7 !important;
+	box-shadow: none !important;
+}
+h1{
+	color: #ff3c31 !important;
+}
+/***********************************************************/

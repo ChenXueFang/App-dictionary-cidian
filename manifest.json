@@ -189,5 +189,94 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/index.css",
+					"css/iconfont.css",
+					"img/ic_launcher.png",
+					"img/index1.png",
+					"img/index2.png",
+					"img/index3.png"
+				],
+				"refer": [
+					"html/find.html",
+					"html/mine.html"
+				],
+				"priority": 0
+			},
+			"html/find.html": {
+				"resources": [
+					"img/list (2).png",
+					"img/ziliao (1).png",
+					"js/swiper.min.js",
+					"img/find (2).png",
+					"img/find (4).png",
+					"img/find (1).png",
+					"img/list (3).png",
+					"img/ziliao (2).png",
+					"css/swiper.min.css",
+					"img/find (3).png",
+					"css/find.css",
+					"img/list (1).png",
+					"img/ziliao (3).png",
+					"img/list (4).png",
+					"img/index2.png",
+					"css/index.css",
+					"img/index1.png",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"html/mine.html": {
+				"resources": [
+					"css/mine.css",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"img/mine_tou.png",
+					"fonts/mui.ttf",
+					"img/index3.png",
+					"img/mine (1).png",
+					"img/mine (3).png",
+					"img/mine (4).png",
+					"img/mine (2).png",
+					"img/mine (6).png",
+					"img/mine (5).png",
+					"html/set.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/set.html": {
+				"resources": [
+					"css/set.css",
+					"html/mine.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/mui.js",
+				"css/mui.css",
+				"README.md"
+			]
+		}
 	}
 }
