@@ -231,10 +231,12 @@
 					"img/index1.png",
 					"js/mui.min.js",
 					"css/iconfont.css",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"html/zixun.html"
 				],
 				"refer": [
-					"index.html"
+					"index.html",
+					"html/mine.html"
 				],
 				"priority": 0
 			},
@@ -269,6 +271,17 @@
 					"css/iconfont.css",
 					"css/mui.min.css",
 					"css/mui.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/zixun.html": {
+				"resources": [
+					"html/find.html",
+					"css/set.css",
+					"css/zixun.css",
+					"js/mui.pullToRefresh.js",
+					"js/mui.pullToRefresh.material.js"
 				],
 				"refer": [],
 				"priority": 0

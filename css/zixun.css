@@ -1,0 +1,13 @@
+/*资讯内容*/
+#hh{
+	background: red !important;
+	color: red !important;
+}
+.zixun_a{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.zixun_a>div.mui-media-body{
+	margin-left: 15px;
+}
