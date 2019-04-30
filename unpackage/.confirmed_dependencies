@@ -1,97 +1,140 @@
 {
-	"index.html": {
-		"resources": [
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"css/index.css",
-			"css/iconfont.css",
-			"img/ic_launcher.png",
-			"img/index1.png",
-			"img/index2.png",
-			"img/index3.png"
-		],
-		"refer": [
-			"html/find.html",
-			"html/mine.html"
-		]
-	},
-	"html/find.html": {
-		"resources": [
-			"img/list (2).png",
-			"img/ziliao (1).png",
-			"js/swiper.min.js",
-			"img/find (2).png",
-			"img/find (4).png",
-			"img/find (1).png",
-			"img/list (3).png",
-			"img/ziliao (2).png",
-			"css/swiper.min.css",
-			"img/find (3).png",
-			"css/find.css",
-			"img/list (1).png",
-			"img/ziliao (3).png",
-			"img/list (4).png",
-			"img/index2.png",
-			"css/index.css",
-			"img/index1.png",
-			"js/mui.min.js",
-			"css/iconfont.css",
-			"css/mui.min.css",
-			"html/zixun.html"
-		],
-		"refer": [
-			"index.html",
-			"html/zixun.html",
-			"html/mine.html"
-		]
-	},
-	"html/mine.html": {
-		"resources": [
-			"css/mine.css",
-			"js/mui.min.js",
-			"css/iconfont.css",
-			"css/mui.min.css",
-			"img/mine_tou.png",
-			"fonts/mui.ttf",
-			"img/index3.png",
-			"img/mine (1).png",
-			"img/mine (3).png",
-			"img/mine (4).png",
-			"img/mine (2).png",
-			"img/mine (6).png",
-			"img/mine (5).png",
-			"html/set.html"
-		],
-		"refer": [
-			"html/set.html",
-			"index.html"
-		]
-	},
-	"html/set.html": {
-		"resources": [
-			"css/set.css",
-			"html/mine.html",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/iconfont.css",
-			"css/mui.min.css",
-			"css/mui.css"
-		],
-		"refer": [
-			"html/mine.html"
-		]
-	},
-	"html/zixun.html": {
-		"resources": [
-			"html/find.html",
-			"css/set.css",
-			"css/zixun.css",
-			"js/mui.pullToRefresh.js",
-			"js/mui.pullToRefresh.material.js"
-		],
-		"refer": [
-			"html/find.html"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/index.css",
+      "css/iconfont.css",
+      "img/ic_launcher.png",
+      "img/index1.png",
+      "img/index2.png",
+      "img/index3.png",
+      "html/main.html"
+    ],
+    "refer": [
+      "html/find.html",
+      "html/mine.html",
+      "html/main.html"
+    ]
+  },
+  "html/find.html": {
+    "resources": [
+      "img/list (2).png",
+      "img/ziliao (1).png",
+      "js/swiper.min.js",
+      "img/find (2).png",
+      "img/find (4).png",
+      "img/find (1).png",
+      "img/list (3).png",
+      "img/ziliao (2).png",
+      "css/swiper.min.css",
+      "img/find (3).png",
+      "css/find.css",
+      "img/list (1).png",
+      "img/ziliao (3).png",
+      "img/list (4).png",
+      "img/index2.png",
+      "css/index.css",
+      "img/index1.png",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "html/zixun.html",
+      "js/jquery-1.11.1.min.js"
+    ],
+    "refer": [
+      "index.html",
+      "html/zixun.html",
+      "html/mine.html"
+    ]
+  },
+  "html/mine.html": {
+    "resources": [
+      "css/mine.css",
+      "js/mui.min.js",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "img/mine_tou.png",
+      "fonts/mui.ttf",
+      "img/index3.png",
+      "img/mine (1).png",
+      "img/mine (3).png",
+      "img/mine (4).png",
+      "img/mine (2).png",
+      "img/mine (6).png",
+      "img/mine (5).png",
+      "html/set.html"
+    ],
+    "refer": [
+      "html/set.html",
+      "index.html"
+    ]
+  },
+  "html/set.html": {
+    "resources": [
+      "css/set.css",
+      "html/mine.html",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/mui.css"
+    ],
+    "refer": [
+      "html/mine.html"
+    ]
+  },
+  "html/zixun.html": {
+    "resources": [
+      "html/find.html",
+      "css/set.css",
+      "css/zixun.css",
+      "js/mui.pullToRefresh.js",
+      "js/mui.pullToRefresh.material.js",
+      "img/index1.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "img/list (2).png",
+      "img/index2.png",
+      "img/find (2).png",
+      "img/find (4).png",
+      "img/find (1).png",
+      "img/list (3).png",
+      "img/find (3).png",
+      "img/list (1).png",
+      "img/list (4).png"
+    ],
+    "refer": [
+      "html/find.html"
+    ]
+  },
+  "html/main.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "img/index1.png",
+      "img/index2.png",
+      "img/index3.png",
+      "css/index.css",
+      "css/iconfont.css",
+      "css/mui.min.css"
+    ]
+  },
+  "html/fengmian.html": {
+    "resources": [
+      "img/home_dict_bg_5.png",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "index.html",
+      "html/main.html"
+    ],
+    "refer": [
+      "index.html",
+      "html/main.html",
+      "html/find.html",
+      "html/mine.html"
+    ]
+  }
 }

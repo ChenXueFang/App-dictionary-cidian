@@ -16,22 +16,6 @@
 	<header class="mui-bar mui-bar-nav"  id="mine">
 	    <h1 class="mui-title">我的</h1>
 	</header>
-	<!--底部导航条-->
-	<nav class="mui-bar mui-bar-tab" id="nav_bottom">
-	    <a class="mui-tab-item" id="index">
-	        <span class="mui-icon iconfont icon-zidian"></span>
-	        <span class="mui-tab-label">字典</span>
-	    </a>
-	    <a class="mui-tab-item" id="finding">
-	        <span class="mui-icon iconfont icon-zitiyulan"></span>
-	        <span class="mui-tab-label">发现</span>
-	    </a>
-	    <a class="mui-tab-item mui-active">
-	        <span class="mui-icon iconfont icon-user"></span>
-	        <span class="mui-tab-label">我的</span>
-	    </a>
-	</nav>
-	<!--底部导航条-->
 	<!--头像登录-->
 	<div class="mine_tou">
 		<img src="../img/mine_tou.png" alt="" />
@@ -67,24 +51,5 @@
 		</ul>
 	</div>
 	<!--列表-->
-	
-	
-<!--******************************************************************************************-->	
-	<script type="text/javascript">
-//		"我的"跳转到"首页"
-		document.getElementById('index').addEventListener('tap',function(){
-      		mui.openWindow({
-			url: '../index.html', 
-			id:'index',
-		  });
-       });
-//		"我的"跳转到"发现"
-		document.getElementById('finding').addEventListener('tap',function(){
-      		mui.openWindow({
-			url: 'html/find.html', 
-			id:'finding'
-		});
-     });
-	</script>
 </body>
 </html>

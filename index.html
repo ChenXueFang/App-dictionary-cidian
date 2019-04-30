@@ -14,12 +14,12 @@
 </head>
 <body id="big">
 	<!--底部导航条-->
-	<nav class="mui-bar mui-bar-tab" id="nav_bottom">
-	    <a class="mui-tab-item mui-active">
+	<nav class="mui-bar mui-bar-tab" id="nav-tabbar">
+	    <a class="mui-tab-item mui-active" id="main">
 	        <span class="mui-icon iconfont icon-zidian"></span>
 	        <span class="mui-tab-label">字典</span>
 	    </a>
-	    <a class="mui-tab-item" id="finding">
+	    <a class="mui-tab-item" id="find">
 	        <span class="mui-icon iconfont icon-zitiyulan"></span>
 	        <span class="mui-tab-label">发现</span>
 	    </a>
@@ -29,115 +29,46 @@
 	    </a>
 	</nav>
 	<!--底部导航条-->
-	<!--头部-->
-	<header id="index">
-		<a href="#">字</a>
-		<a href="#">100</a>
-		<a href="#" class="mui-icon iconfont icon-shoucang"></a>
-		<a href="#" class="mui-icon iconfont icon-ellipsis-vertical"></a>
-	</header>
-	<!--头部-->
-	<!--main-->
-	<main>
-		<!--大标题-->
-		<h1>快快查字典</h1>
-		<!--输入框-->
-		<div class="input">
-			<input type="text" placeholder="字、词、成语都可查询" />
-			<!--定位图标-->
-			<div class="icon_input">
-				<span class="mui-icon iconfont icon-sousuo ico_search"></span>
-				<div class="icon_two">
-					<span class="mui-icon iconfont icon-bi"></span>
-					<b></b>
-					<span class="mui-icon mui-icon-camera"></span>
-				</div>	
-			</div>
-			<!--定位图标-->
-		</div>
-		<!--输入框-->
-		<!--三个分类查询-->
-		<ul class="three_refer">
-			<li>
-				<p>拼</p>
-				按拼音查
-			</li>
-			<li>
-				<p>部</p>
-				按部首查
-			</li>
-			<li>
-				<p>笔</p>
-				按笔画查
-			</li>
-		</ul>
-		<!--三个分类查询-->
-		<!--学习资讯-->
-		<div class="consult">
-			<!--学习资讯title-->
-			<ul class="consult_title">
-				<li>
-					<span class="mui-icon iconfont icon-xiangqing"></span>&nbsp;学习资讯
-				</li>
-				<li>
-					<span class="mui-icon iconfont icon-diandian"></span>
-				</li>
-			</ul>
-			<!--学习资讯title-->
-			<!--学习资讯内容-->
-			<ul class="mui-table-view consult_con" id="bbb">
-			    <li class="mui-table-view-cell mui-media">
-			        <div href="javascript:;" class="consult_a">
-			            <img class="mui-pull-left" src="img/index1.png" height="70px" width="130px">
-			            <div class="mui-media-body">
-			                <div style="margin-top: 5px;">为什么叫房东,而不是房西</div>
-			                <p class="mui-ellipsis" style="margin-top: 3px;">每日一读&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04月11日</p>
-			            </div>
-			        </div>
-			    </li>
-			    <li class="mui-table-view-cell mui-media">
-			        <div href="javascript:;" class="consult_a">
-			            <img class="mui-pull-left" src="img/index2.png" height="70px" width="130px">
-			            <div class="mui-media-body">
-			                <div style="margin-top: 5px;">为什么叫房东,而不是房西</div>
-			                <p class="mui-ellipsis" style="margin-top: 3px;">每日一读&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;04月11日</p>
-			            </div>
-			        </div>
-			    </li>
-			</ul>
-			<!--学习资讯内容-->
-			<p class="consult_more">更多内容</p>
-		</div> 
-		<!--学习资讯-->
-		<ul class="mui-table-view consult">
-		    <li class="mui-table-view-cell mui-media">
-		        <a href="javascript:;" class="day">
-		            <img class="mui-media-object mui-pull-left" src="img/index3.png">
-		            <div class="mui-media-body">
-		               你还没有用每日一句记录
-		                <p class="mui-ellipsis">今天 08:23</p>
-		            </div>
-		            <span class="iconfont icon-ellipsis-vertical"></span>
-		        </a>
-		    </li>
-		</ul>
-	</main>
-	<!--main-->
-	<script type="text/javascript">
-//		首页调到第二页"发现"
-		document.getElementById('finding').addEventListener('tap',function(){
-      		mui.openWindow({
-				url: 'html/find.html', 
-				id:'finding'
-			});
-        });
-//		首页调到第三页"我的"
-		document.getElementById('mine').addEventListener('tap',function(){
-      		mui.openWindow({
-				url: 'html/mine.html', 
-				id:'mine'
-			});
-        });
+	
+	<script>
+		var defaultpage = "html/main.html";	// 定义默认选项卡子页面
+		// 定义所有子页面
+		var subpages = ['html/main.html', 'html/find.html', 'html/mine.html'];
+		// 页面加载完成后加载子页面
+		mui.plusReady(function(){
+			var current =  plus.webview.currentWebview();	//获取当前页面的窗口对象
+			// 加载所有子页面
+			for(var i =0;i<5;i++){
+				var sub = plus.webview.create(
+					subpages[i], 
+                    subpages[i], 
+                    {
+                        top: '0px', 
+                        bottom: '50px' 
+                    }
+				);
+				// 除默认页面外，其他子页面隐藏
+				if(subpages[i] != defaultpage){
+					sub.hide();
+				}
+				current.append(sub);	// 子页面加入窗口对象
+			};
+			document.getElementById('zixun').addEventListener('tap',function(){
+		mui.openWindow({
+		url: 'html/zixun.html', 
+		id:'zixun'
+	})
+	})
+		});
+		
+		// 创建点击事件
+		mui("#nav-tabbar").on("tap","a",function(e){
+			plus.webview.hide(defaultpage);		// 隐藏上一个子页面
+			plus.webview.show("html/"+ this.id + ".html")	// 显示当前点击页面
+			defaultpage ="html/"+ this.id + ".html";	// 记录当前点击页面
+		})
+ 
 	</script>
+
 </body>
 </html>

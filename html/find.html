@@ -5,7 +5,9 @@
 	<title></title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 	<link href="../css/mui.min.css" rel="stylesheet" />
+	<script src="../js/jquery-1.11.1.min.js"></script>
 	<script src="../js/mui.min.js"></script>
+	
 	<link href="../css/swiper.min.css" rel="stylesheet" />
 	<script src="../js/swiper.min.js"></script>
 	<link href="../css/iconfont.css" rel="stylesheet"/>
@@ -19,22 +21,6 @@
 	<header class="mui-bar mui-bar-nav" id="finding">
 	    <h1 class="mui-title">发现</h1>
 	</header>
-	<!--底部导航条-->
-	<nav class="mui-bar mui-bar-tab" id="nav_bottom">
-	    <a class="mui-tab-item" id="index">
-	        <span class="mui-icon iconfont icon-zidian"></span>
-	        <span class="mui-tab-label">字典</span>
-	    </a>
-	    <a class="mui-tab-item mui-active" id="finding">
-	        <span class="mui-icon iconfont icon-zitiyulan"></span>
-	        <span class="mui-tab-label">发现</span>
-	    </a>
-	    <a class="mui-tab-item" id="mine">
-	        <span class="mui-icon iconfont icon-user"></span>
-	        <span class="mui-tab-label">我的</span>
-	    </a>
-	</nav>
-	<!--底部导航条-->
 	<!--banner轮播图-->
 	<div class="swiper_lun">
 	  <div class="swiper-container swiper_banner">
@@ -56,13 +42,13 @@
 			<li>
 				<b></b> &nbsp;&nbsp;资讯
 			</li>
-			<li>
-				<a href="zixun.html" style="color: #888;">更多<span class="mui-icon iconfont icon-right"></span></a>
+			<li id="zixun">
+				<a href="" style="color: #888;">更多<span class="mui-icon iconfont icon-right"></span></a>
 			</li>
 		</ul>
 		<!--资讯title-->
 		<!--资讯内容-->
-		<ul class="mui-table-view consult_con">
+		<ul class="mui-table-view zixun_con">
 		    <li class="mui-table-view-cell mui-media">
 		        <div href="javascript:;" class="consult_a">
 		            <img class="mui-pull-left" src="../img/index1.png" height="70px" width="130px">
@@ -150,7 +136,7 @@
 		<ul class="mui-table-view list_con">
 		    <li class="mui-table-view-cell mui-media">
 		        <div href="javascript:;" class="consult_a">
-		            <img class="mui-pull-left" src="../img/list (1).png" height="70px" width="130px">
+		            <img class="mui-pull-left" src="../img/list (1).png" height="70px" width="100px">
 		            <div class="mui-media-body">
 		                <div style="margin-top: 5px;">字典词典</div>
 		                <p class="" style="margin-top: 3px;">关注【快快查词典】，每天多学一点，好好学习</p>
@@ -159,7 +145,7 @@
 		    </li>
 		    <li class="mui-table-view-cell mui-media">
 		        <div href="javascript:;" class="consult_a">
-		            <img class="mui-pull-left" src="../img/list (2).png" height="70px" width="130px">
+		            <img class="mui-pull-left" src="../img/list (2).png" height="70px" width="100px">
 		            <div class="mui-media-body">
 		                <div style="margin-top: 5px;">诗词典籍</div>
 		                <p class="" style="margin-top: 3px;">关注【快快查词典】，每天多学一点，好好学习</p>
@@ -168,7 +154,7 @@
 		    </li>
 		    <li class="mui-table-view-cell mui-media">
 		        <div href="javascript:;" class="consult_a">
-		            <img class="mui-pull-left" src="../img/list (3).png" height="70px" width="130px">
+		            <img class="mui-pull-left" src="../img/list (3).png" height="70px" width="100px">
 		            <div class="mui-media-body">
 		                <div style="margin-top: 5px;">中小学100提速</div>
 		                <p class="" style="margin-top: 3px;">关注【快快查词典】，每天多学一点，好好学习</p>
@@ -177,7 +163,7 @@
 		    </li>
 		    <li class="mui-table-view-cell mui-media">
 		        <div href="javascript:;" class="consult_a">
-		            <img class="mui-pull-left" src="../img/list (4).png" height="70px" width="130px">
+		            <img class="mui-pull-left" src="../img/list (4).png" height="70px" width="100px">
 		            <div class="mui-media-body">
 		                <div style="margin-top: 5px;">快快查字典公众号</div>
 		                <p class="" style="margin-top: 3px;">关注【快快查词典】，每天多学一点，好好学习</p>
@@ -213,20 +199,6 @@
 	        prevEl: '.swiper-button-prev',
 	      },
 	    });
-//	    页面跳转首页
-		document.getElementById('index').addEventListener('tap',function(){
-      		mui.openWindow({
-			url: '../index.html', 
-			id:'index',
-		  });
-       });
-//     页面跳转"我的"
-		document.getElementById('mine').addEventListener('tap',function(){
-      		mui.openWindow({
-			url: 'mine.html', 
-			id:'mine',
-		  });
-       });
 //  汉字游戏轮播
 	var swiper = new Swiper('.swiper_more', {
       slidesPerView: 3,
@@ -243,6 +215,20 @@
 //      clickable: true,
 //    },
     });
+    
+	 $("#zixun").bind("tap",function(e){
+		e.preventDefault();
+		mui.openWindow({
+			url:"zixun.html",
+			id:"zixun",
+			styles:{
+				duration:1000
+			},
+			show:{
+				aniShow:'slide-in-bottom'
+			}
+		});
+	});
   </script>
 </body>
 </html>

@@ -1,13 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+header{
+	background: #f7f3f7 !important;
+	box-shadow: none !important;
+}
+h1{
+	color: #ff3c31 !important;
+}
+/***********************************************************/
 /*资讯内容*/
-#hh{
-	background: red !important;
-	color: red !important;
+.zixun_con li{
+	width: 97%;
+	background: pink;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .zixun_a{
 	height: 70px;
 	display: flex;
 	justify-content: space-between;
 }
-.zixun_a>div.mui-media-body{
-	margin-left: 15px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
